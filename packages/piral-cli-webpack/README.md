@@ -6,7 +6,7 @@ This plugin enables using [Webpack v4](https://webpack.js.org) as the bundler fo
 
 ## Installation
 
-Use your favorite NPM client for the installation:
+Use your favorite npm client for the installation:
 
 ```sh
 npm i piral-cli-webpack --save-dev
