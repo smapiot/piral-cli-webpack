@@ -1,0 +1,47 @@
+{
+  "name": "parcel-codegen-loader",
+  "version": "0.15.0",
+  "description": "A loader for .codegen files to auto-generate modules on the fly.",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smapiot",
+  "homepage": "https://piral.io",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/smapiot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smapiot/piral-cli-webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smapiot/piral-cli-webpack/issues"
+  },
+  "keywords": [
+    "codegen",
+    "webpack",
+    "loader"
+  ],
+  "peerDependencies": {
+    "webpack": "4.x || 5.x"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.0"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^2.6.5"
+  }
+}

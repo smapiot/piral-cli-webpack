@@ -1,0 +1,45 @@
+{
+  "name": "pilet-webpack-plugin",
+  "version": "0.15.0",
+  "description": "Webpack plugin for generating a valid pilet bundle.",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smapiot",
+  "homepage": "https://piral.io",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/smapiot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smapiot/piral-cli-webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smapiot/piral-cli-webpack/issues"
+  },
+  "keywords": [
+    "piral-cli",
+    "piral",
+    "plugin",
+    "webpack",
+    "command"
+  ],
+  "peerDependencies": {
+    "webpack": "4.x"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.0"
+  }
+}
