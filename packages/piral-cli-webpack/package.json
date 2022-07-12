@@ -48,7 +48,7 @@
     "@types/terser-webpack-plugin": "^2.2.0",
     "@types/webpack": "^4.41.7",
     "@types/yargs": "^15.0.4",
-    "piral-cli": "^0.14.9",
+    "piral-cli": "next",
     "typescript": "^4.0.2"
   },
   "dependencies": {

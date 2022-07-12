@@ -2,4 +2,4 @@
 
 ## 0.15.0 (tbd)
 
-- Moved package to dedicated repository
+- Moved `piral-cli-webpack` package to dedicated repository
