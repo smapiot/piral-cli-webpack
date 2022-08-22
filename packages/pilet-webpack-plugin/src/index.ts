@@ -43,7 +43,6 @@ export class PiletWebpackPlugin implements Plugin {
       new BannerPlugin({
         banner: `//@pilet v:0`,
         entryOnly: true,
-        include: `${mainEntry}.js`,
         raw: true,
       }),
     ];
@@ -72,7 +71,6 @@ export class PiletWebpackPlugin implements Plugin {
       new BannerPlugin({
         banner: `//@pilet v:1(${prName})`,
         entryOnly: true,
-        include: `${mainEntry}.js`,
         raw: true,
       }),
     ];
@@ -106,7 +104,6 @@ export class PiletWebpackPlugin implements Plugin {
       new BannerPlugin({
         banner: `//@pilet v:2(${prName},${JSON.stringify(dependencies)})`,
         entryOnly: true,
-        include: `${mainEntry}.js`,
         raw: true,
       }),
     ];
