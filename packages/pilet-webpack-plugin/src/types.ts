@@ -19,7 +19,7 @@ export interface PiletWebpackPluginOptions {
   /**
    * The name of the Piral instance / app shell.
    */
-  piral: string;
+  piralInstances: Array<string>;
   /**
    * The schema version. By default, v1 is used.
    */
