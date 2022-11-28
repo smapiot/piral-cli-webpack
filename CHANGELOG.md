@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.15.1 (tbd)
+## 0.15.1 (November 28, 2022)
 
 - Fixed issue with `piral-core` 0.15 onwards (Webpack v4 does not respect `exports` section of *package.json*)
 - Updated `pilet-webpack-plugin` to allow placeholders in entry module file name 
