@@ -44,6 +44,13 @@ async function getConfig(
 
     resolve: {
       extensions,
+      alias: {
+        // Webpack v4 does not respect the "exports" section of a package.json
+        // so we just (hacky) teach Webpack the special case of `piral-core`
+        // etc. by introducing the alias definitions below
+        'piral-base/_': 'piral-base/esm',
+        'piral-core/_': 'piral-core/esm',
+      },
     },
 
     module: {
@@ -82,9 +89,9 @@ async function getConfig(
 
 const handler: PiralBuildHandler = {
   async create(options) {
-    const { 'hmr-port': defaultHmrPort = 62123 } = options.args._;
+    const { 'hmr-port': defaultHmrPort = 62123, config = defaultWebpackConfig } = options.args._;
     const hmrPort = options.hmr ? await getFreePort(defaultHmrPort) : 0;
-    const otherConfigPath = resolve(options.root, defaultWebpackConfig);
+    const otherConfigPath = resolve(options.root, config);
     const baseConfig = await getConfig(
       options.entryFiles,
       options.outDir,

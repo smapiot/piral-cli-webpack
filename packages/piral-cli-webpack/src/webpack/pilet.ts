@@ -15,7 +15,7 @@ async function getConfig(
   filename: string,
   externals: Array<string>,
   importmap: Array<SharedDependency> = [],
-  piral: string,
+  piralInstances: Array<string>,
   schema: PiletSchemaVersion,
   develop = false,
   sourceMaps = true,
@@ -74,7 +74,7 @@ async function getConfig(
       [
         new PiletWebpackPlugin({
           name,
-          piral,
+          piralInstances,
           version,
           externals,
           importmap,
@@ -90,14 +90,15 @@ async function getConfig(
 
 const handler: PiletBuildHandler = {
   async create(options) {
-    const otherConfigPath = resolve(options.root, defaultWebpackConfig);
+    const { config = defaultWebpackConfig } = options.args._;
+    const otherConfigPath = resolve(options.root, config);
     const baseConfig = await getConfig(
       options.entryModule,
       options.outDir,
       options.outFile,
       options.externals,
       options.importmap,
-      options.piral,
+      options.piralInstances,
       options.version,
       options.develop,
       options.sourceMaps,

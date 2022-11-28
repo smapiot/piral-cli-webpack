@@ -4,6 +4,8 @@
 
 The `piral-cli` plugin for using `webpack` (v4) as bundler.
 
+(There is also `piral-cli-webpack5` if you look for `webpack` v5 support, which is also our recommended release. More information on the [npm package](https://www.npmjs.com/package/piral-cli-webpack5).)
+
 ## Important Links
 
 * 📢 **[We are hiring!](https://smapiot.com/jobs)** - work with us on Piral, its ecosystem and our users

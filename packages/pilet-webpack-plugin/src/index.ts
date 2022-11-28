@@ -3,7 +3,6 @@ import {
   setEnvironment,
   getDefineVariables,
   getVariables,
-  getExternals,
   withExternals,
   getDependencies,
 } from './helpers';
@@ -130,7 +129,7 @@ export class PiletWebpackPlugin implements Plugin {
   }
 
   setup(compiler: Compiler) {
-    const { name, version, piral, externals = getExternals(piral), schema } = this.options;
+    const { name, version, externals = [], schema } = this.options;
     const environment = process.env.NODE_ENV || 'development';
     this.variables = {
       ...getVariables(name, version, environment),
