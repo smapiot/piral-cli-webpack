@@ -44,6 +44,13 @@ async function getConfig(
 
     resolve: {
       extensions,
+      alias: {
+        // Webpack v4 does not respect the "exports" section of a package.json
+        // so we just (hacky) teach Webpack the special case of `piral-core`
+        // etc. by introducing the alias definitions below
+        'piral-base/_': 'piral-base/esm',
+        'piral-core/_': 'piral-core/esm',
+      },
     },
 
     module: {
