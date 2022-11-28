@@ -41,13 +41,13 @@ export class PiletWebpackPlugin implements Plugin {
     const plugins = [
       new DefinePlugin(getDefineVariables(this.variables)),
       new BannerPlugin({
-        banner: (data) => {
+        banner(data) {
           const { chunk } = data;
           return chunk.name === mainEntry ? banner : '';
         },
         entryOnly: true,
         raw: true,
-      }),
+      } as any),
     ];
 
     compiler.hooks.afterEnvironment.tap(pluginName, () => {
@@ -73,13 +73,13 @@ export class PiletWebpackPlugin implements Plugin {
     const plugins = [
       new DefinePlugin(getDefineVariables(this.variables)),
       new BannerPlugin({
-        banner: (data) => {
+        banner(data) {
           const { chunk } = data;
           return chunk.name === mainEntry ? banner : '';
         },
         entryOnly: true,
         raw: true,
-      }),
+      } as any),
     ];
 
     compiler.hooks.afterEnvironment.tap(pluginName, () => {
@@ -110,13 +110,13 @@ export class PiletWebpackPlugin implements Plugin {
     const plugins = [
       new DefinePlugin(getDefineVariables(this.variables)),
       new BannerPlugin({
-        banner: (data) => {
+        banner(data) {
           const { chunk } = data;
           return chunk.name === mainEntry ? banner : '';
         },
         entryOnly: true,
         raw: true,
-      }),
+      } as any),
     ];
 
     compiler.hooks.afterEnvironment.tap(pluginName, () => {
