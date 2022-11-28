@@ -33,6 +33,7 @@ export class PiletWebpackPlugin implements Plugin {
     const shortName = name.replace(/\W/gi, '');
     const prName = `wp4Chunkpr_${shortName}`;
     const [mainEntry] = Object.keys(config.entry);
+    const banner = `//@pilet v:0`;
 
     setEnvironment(this.variables);
     withExternals(config, this.externals);
@@ -40,11 +41,13 @@ export class PiletWebpackPlugin implements Plugin {
     const plugins = [
       new DefinePlugin(getDefineVariables(this.variables)),
       new BannerPlugin({
-        banner: `//@pilet v:0`,
+        banner(data) {
+          const { chunk } = data;
+          return chunk.name === mainEntry ? banner : '';
+        },
         entryOnly: true,
-        include: `${mainEntry}.js`,
         raw: true,
-      }),
+      } as any),
     ];
 
     compiler.hooks.afterEnvironment.tap(pluginName, () => {
@@ -62,6 +65,7 @@ export class PiletWebpackPlugin implements Plugin {
     const shortName = name.replace(/\W/gi, '');
     const prName = `wp4Chunkpr_${shortName}`;
     const [mainEntry] = Object.keys(config.entry);
+    const banner = `//@pilet v:1(${prName})`;
 
     setEnvironment(this.variables);
     withExternals(config, this.externals);
@@ -69,11 +73,13 @@ export class PiletWebpackPlugin implements Plugin {
     const plugins = [
       new DefinePlugin(getDefineVariables(this.variables)),
       new BannerPlugin({
-        banner: `//@pilet v:1(${prName})`,
+        banner(data) {
+          const { chunk } = data;
+          return chunk.name === mainEntry ? banner : '';
+        },
         entryOnly: true,
-        include: `${mainEntry}.js`,
         raw: true,
-      }),
+      } as any),
     ];
 
     compiler.hooks.afterEnvironment.tap(pluginName, () => {
@@ -99,15 +105,18 @@ export class PiletWebpackPlugin implements Plugin {
     setEnvironment(this.variables);
 
     const dependencies = getDependencies(importmap, config);
+    const banner = `//@pilet v:2(${prName},${JSON.stringify(dependencies)})`;
 
     const plugins = [
       new DefinePlugin(getDefineVariables(this.variables)),
       new BannerPlugin({
-        banner: `//@pilet v:2(${prName},${JSON.stringify(dependencies)})`,
+        banner(data) {
+          const { chunk } = data;
+          return chunk.name === mainEntry ? banner : '';
+        },
         entryOnly: true,
-        include: `${mainEntry}.js`,
         raw: true,
-      }),
+      } as any),
     ];
 
     compiler.hooks.afterEnvironment.tap(pluginName, () => {
