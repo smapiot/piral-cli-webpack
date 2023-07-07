@@ -12,7 +12,7 @@
   "homepage": "https://piral.io",
   "license": "MIT",
   "engines": {
-    "node": ">=10.0"
+    "node": ">=14.0"
   },
   "files": [
     "lib",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0 (tbd)
+
+- Adjusted for Piral 1.0.0
+
 ## 0.15.2 (December 13, 2022)
 
 - Fixed issue with `piral-cli-webpack5/extend-config` when adding rules
