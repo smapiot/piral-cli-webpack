@@ -128,6 +128,11 @@ export class PiletWebpackPlugin implements Plugin {
     return plugins;
   }
 
+  piletV3WebpackConfigEnhancer(compiler: Compiler) {
+    // right now this is just an alias for V2
+    return this.piletV2WebpackConfigEnhancer(compiler);
+  }
+
   setup(compiler: Compiler) {
     const { name, version, externals = [], schema } = this.options;
     const environment = process.env.NODE_ENV || 'development';
@@ -144,6 +149,8 @@ export class PiletWebpackPlugin implements Plugin {
         return this.piletV1WebpackConfigEnhancer(compiler);
       case 'v2':
         return this.piletV2WebpackConfigEnhancer(compiler);
+      case 'v3':
+        return this.piletV3WebpackConfigEnhancer(compiler);
       case 'none':
       default:
         return this.piletVxWebpackConfigEnhancer(compiler);

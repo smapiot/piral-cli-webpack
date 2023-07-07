@@ -3629,7 +3629,7 @@ chalk@4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^2.0.0, chalk@^2.3.0, chalk@^2.4.2:
+chalk@^2.0.0, chalk@^2.3.0:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -4519,12 +4519,10 @@ detect-newline@^3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
-dets@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/dets/-/dets-0.12.0.tgz#f6488d44059ef4b63c36e5949e1cd5792045dd66"
-  integrity sha512-L3ZMC2lBfcxffdBRguce4WA+GPoHAqndlqDZS6AQDt96MDMhvGb1MALEYd5SP2He0ENyGgB8Ap4lXwPhaeQ/yg==
-  dependencies:
-    yargs "^15.4.1"
+dets@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/dets/-/dets-0.13.0.tgz#d6a42edc845ecd9bc616961d6ea1ea45b0b271b8"
+  integrity sha512-5Dsm+lhQTfGEIgIvcRWPZ55OhPOQPrFI76QJFIIXbdvU96D7urVUUK+/1MHm1soSBaiSfk49B3wVBt5wG4RE5g==
 
 dezalgo@^1.0.0:
   version "1.0.3"
@@ -7021,10 +7019,10 @@ kras-management-portal@^0.13.0:
   resolved "https://registry.yarnpkg.com/kras-management-portal/-/kras-management-portal-0.13.0.tgz#550f2797fce399529897aaa871030644d96812c1"
   integrity sha512-NjjXTHKcJ/ECkz03L/HQSUVnkuzZkEV2mwcex36lxJNNwiUrYM5Ju0toAjhLnf8Zpc3nLEPnWKmoTwpSgGim2A==
 
-kras@^0.15.1:
-  version "0.15.1"
-  resolved "https://registry.yarnpkg.com/kras/-/kras-0.15.1.tgz#1f15b294f6ca9240043f41d1ae85d5b32e613d07"
-  integrity sha512-ftr5otMi+TQJPNoGwLYMoKM/lX2JhJVk99ikuYhHI7JSYrsZdv9+2A3Y8QlurILRqS1/tSQGBfA/XRfMdkbidA==
+kras@^0.15.4:
+  version "0.15.4"
+  resolved "https://registry.yarnpkg.com/kras/-/kras-0.15.4.tgz#b38dbefd1f416f891a5e5fee614ee322cfd87bb8"
+  integrity sha512-+ldR91xS4YduVQ5FAmfQHwC84kdesa70ve40Iy9iFccy/4m2WGvmxmMAigpAq7RhFAZu3u7ijgkJHRJUp54WXg==
   dependencies:
     kras-management-portal "^0.13.0"
     yargs "^15.4.1"
@@ -8552,17 +8550,16 @@ pify@^5.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-piral-cli@next:
-  version "0.15.0-beta.4633"
-  resolved "https://registry.yarnpkg.com/piral-cli/-/piral-cli-0.15.0-beta.4633.tgz#4ca24901243febfc783ce133e05d6cf98297bf1b"
-  integrity sha512-XZCYAWyDsAAdldnRBhHy7S+AJBpO2hbZEt4ak/ntwMo2pW+EgRaWZ24qdmOoFhGteAIsNTWQkck+NexskUznUw==
+piral-cli@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/piral-cli/-/piral-cli-1.0.0.tgz#61674e0eb97f88bd68e54e0da6afdaa5354acca4"
+  integrity sha512-vBthIAVI+bgyvP1ot1FTchS8YrScH8Kd/fz8si8JzDCDAAtDPBJ0nNgQ4KnrdwT9tvE9gpUfZcvh2DRUZtDWkA==
   dependencies:
-    chalk "^2.4.2"
-    dets "^0.12.0"
-    kras "^0.15.1"
+    dets "^0.13.0"
+    kras "^0.15.4"
     rimraf "^3.0.0"
-    typescript "^4.7.3"
-    yargs "^15.4.1"
+    typescript "^5.0.0"
+    yargs "^15.0.0"
 
 pirates@^4.0.1:
   version "4.0.5"
@@ -10651,10 +10648,10 @@ typescript@^4.0.2, typescript@^4.4.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
   integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
 
-typescript@^4.7.3:
-  version "4.7.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
-  integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
+typescript@^5.0.0:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
+  integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
 uglify-js@^3.1.4:
   version "3.15.0"
@@ -11286,7 +11283,7 @@ yargs-parser@^20.2.2, yargs-parser@^20.2.3:
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
 
-yargs@^15.3.1, yargs@^15.4.1:
+yargs@^15.0.0, yargs@^15.3.1, yargs@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.4.1.tgz#0d87a16de01aee9d8bec2bfbf74f67851730f4f8"
   integrity sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
