@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (tbd)
+
+- Updated dependencies
+- Fixed issue with .mjs not being processed in dependencies
+
 ## 1.0.0 (July 7, 2023)
 
 - Adjusted for Piral 1.0.0

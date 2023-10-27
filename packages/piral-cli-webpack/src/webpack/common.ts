@@ -109,7 +109,6 @@ export function getRules(production: boolean): Array<RuleSetRule> {
         {
           test: /\.m?jsx?$/i,
           use: [babelLoader],
-          exclude: nodeModules,
         },
         {
           test: /\.tsx?$/i,
