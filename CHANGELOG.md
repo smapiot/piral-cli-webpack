@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.1 (tbd)
+## 1.0.1 (October 27, 2023)
 
 - Updated dependencies
 - Fixed issue with .mjs not being processed in dependencies
