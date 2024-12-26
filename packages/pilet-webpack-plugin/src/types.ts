@@ -23,7 +23,7 @@ export interface PiletWebpackPluginOptions {
   /**
    * The schema version. By default, v2 is used.
    */
-  schema?: 'v0' | 'v1' | 'v2' | 'v3' | 'none';
+  schema?: 'v0' | 'v1' | 'v2' | 'v3' | 'mf' | 'none';
   /**
    * The shared dependencies. By default, these are read from the
    * Piral instance.
