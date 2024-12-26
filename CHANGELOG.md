@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 (tbd)
+
+- Use new codegen plugin
+
 ## 1.0.1 (October 27, 2023)
 
 - Updated dependencies
