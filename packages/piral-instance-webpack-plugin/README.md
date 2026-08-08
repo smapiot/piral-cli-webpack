@@ -142,7 +142,7 @@ This plugin is released using the MIT license.
 [npm-url]: https://npmjs.com/package/piral-instance-webpack-plugin
 [node]: https://img.shields.io/node/v/piral-instance-webpack-plugin.svg
 [node-url]: https://nodejs.org
-[chat]: https://img.shields.io/badge/gitter-piral.io%2Fcommunity-brightgreen.svg
+[chat]: https://img.shields.io/discord/1222632475449229352
 [chat-url]: https://discord.gg/kKJ2FZmK8t
 [size]: https://packagephobia.now.sh/badge?p=piral-instance-webpack-plugin
 [size-url]: https://packagephobia.now.sh/result?p=piral-instance-webpack-plugin
